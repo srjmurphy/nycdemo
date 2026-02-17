@@ -1,0 +1,71 @@
+fileVersion: 1
+id: c46fd8ba-ef69-477d-95a0-d614f0b39cf6
+name: STG_RATE_CODES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Staging table for rate codes with type casting and renaming
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3383e064-3b0a-4ee3-9696-8537e0c16673
+          stepCounter: c46fd8ba-ef69-477d-95a0-d614f0b39cf6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RATECODE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec85e208-c15b-48e6-aefa-f686643e959d
+                stepCounter: f3b29c11-9fb6-43d6-8234-ffec81a2f2f6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 427c6baf-5cf1-43b4-b2a5-d4a6a28b5e14
+          stepCounter: c46fd8ba-ef69-477d-95a0-d614f0b39cf6
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: RATE_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6f0a7c6-76ee-48c4-87c3-64d893eaaab5
+                stepCounter: f3b29c11-9fb6-43d6-8234-ffec81a2f2f6
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          SEED_RATE_CODES: f3b29c11-9fb6-43d6-8234-ffec81a2f2f6
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: SEED_RATE_CODES
+        join:
+          joinCondition: FROM {{ ref('SRC', 'SEED_RATE_CODES') }} "SEED_RATE_CODES"
+        name: STG_RATE_CODES
+        noLinkRefs: []
+  name: STG_RATE_CODES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

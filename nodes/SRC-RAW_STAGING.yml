@@ -1,0 +1,377 @@
+fileVersion: 1
+id: 07dd2a73-8138-4667-91fa-a8668f4aa838
+name: RAW_STAGING
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 383f6bdc-3945-4a8e-8b28-481e512a8061
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: VENDORID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0eab527e-0cdf-4228-b594-99367a547ccd
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: TPEP_PICKUP_DATETIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec926d33-779a-42a9-acd7-f7e1837880f4
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: TPEP_DROPOFF_DATETIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 511354c3-bd69-4274-896c-a99d313da5e0
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PASSENGER_COUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 692011d8-fa06-4f2d-9c5e-abdba4410d52
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: TRIP_DISTANCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5f1f98d-1bfe-41e0-9d58-cd1bedf0343d
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: RATECODEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25a68a4f-241e-42dc-b8aa-e1f0f51050c1
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STORE_AND_FWD_FLAG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62b04e00-537c-47ac-9913-4ee011427d1d
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PULOCATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24c4791d-3808-4970-a5db-6dcbb0240b18
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DOLOCATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 353e2d92-ce3f-44c0-beb9-40df45096dff
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PAYMENT_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a949664f-1c7a-4e16-bba8-0f283d769571
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: FARE_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41c82b89-ba6b-46e3-be01-d01aa0f4f19b
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: EXTRA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 891f1c84-bbca-496d-b46b-f0a69287c801
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: MTA_TAX
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7518ea8-ecff-4150-b5f9-be514b7d0222
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: TIP_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f904257-d396-4f9b-831f-e82df6e2f1c4
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: TOLLS_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: be8e5fab-1a87-4271-9578-ca0012c9fc1f
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: IMPROVEMENT_SURCHARGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ad55fa2-a3a4-4806-819a-83005347abd1
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: TOTAL_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 854ff1a5-1847-443b-ada8-1e5c69a389c5
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: CONGESTION_SURCHARGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 961ed422-9477-4640-83e6-98072c30dec4
+          stepCounter: 07dd2a73-8138-4667-91fa-a8668f4aa838
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: AIRPORT_FEE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: RAW_STAGING
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

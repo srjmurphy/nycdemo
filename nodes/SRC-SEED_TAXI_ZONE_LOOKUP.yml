@@ -1,0 +1,92 @@
+fileVersion: 1
+id: abd27694-950e-4697-93b5-36b71e534d72
+name: SEED_TAXI_ZONE_LOOKUP
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02e5fc0b-cb6a-4a98-b951-a2ecb6f7bcbb
+          stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LOCATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 721081c4-b393-4351-a8e7-693d3fe207f7
+          stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: BOROUGH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a8b36b2-1d64-4c00-909a-ba1e980a429d
+          stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ZONE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c93ef7f-276b-4d84-b478-198d52c51b58
+          stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_ZONE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SEED_TAXI_ZONE_LOOKUP
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,99 @@
+fileVersion: 1
+id: 7ecde778-d439-480b-b091-f1434ea787d0
+name: STG_TAXI_ZONE_LOOKUP
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Staging table for taxi zone lookup with type casting and renaming
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 019c67ed-d416-751e-af16-998fc866831c
+          stepCounter: 7ecde778-d439-480b-b091-f1434ea787d0
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: LOCATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 02e5fc0b-cb6a-4a98-b951-a2ecb6f7bcbb
+                stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 019c67ed-d416-751e-af16-9c59f636f9c9
+          stepCounter: 7ecde778-d439-480b-b091-f1434ea787d0
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BOROUGH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 721081c4-b393-4351-a8e7-693d3fe207f7
+                stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 019c67ed-d416-751e-af16-a19336e5a884
+          stepCounter: 7ecde778-d439-480b-b091-f1434ea787d0
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a8b36b2-1d64-4c00-909a-ba1e980a429d
+                stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 019c67ed-d416-751e-af16-a42c96ab36c2
+          stepCounter: 7ecde778-d439-480b-b091-f1434ea787d0
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SERVICE_ZONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c93ef7f-276b-4d84-b478-198d52c51b58
+                stepCounter: abd27694-950e-4697-93b5-36b71e534d72
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          SEED_TAXI_ZONE_LOOKUP: abd27694-950e-4697-93b5-36b71e534d72
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: SEED_TAXI_ZONE_LOOKUP
+        join:
+          joinCondition: FROM {{ ref('SRC', 'SEED_TAXI_ZONE_LOOKUP') }} SEED_TAXI_ZONE_LOOKUP
+        name: STG_TAXI_ZONE_LOOKUP
+        noLinkRefs: []
+  name: STG_TAXI_ZONE_LOOKUP
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

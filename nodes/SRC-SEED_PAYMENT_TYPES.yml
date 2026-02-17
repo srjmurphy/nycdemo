@@ -1,0 +1,54 @@
+fileVersion: 1
+id: f65c8044-1de3-4863-ad89-accbc66454db
+name: SEED_PAYMENT_TYPES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3a1156e-2ea8-40ad-bfe0-e20fa6a04b18
+          stepCounter: f65c8044-1de3-4863-ad89-accbc66454db
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PAYMENT_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3204d4ce-1c89-4781-b755-471025b89dbc
+          stepCounter: f65c8044-1de3-4863-ad89-accbc66454db
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PAYMENT_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SEED_PAYMENT_TYPES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

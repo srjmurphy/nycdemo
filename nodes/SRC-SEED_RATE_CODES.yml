@@ -1,0 +1,54 @@
+fileVersion: 1
+id: f3b29c11-9fb6-43d6-8234-ffec81a2f2f6
+name: SEED_RATE_CODES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec85e208-c15b-48e6-aefa-f686643e959d
+          stepCounter: f3b29c11-9fb6-43d6-8234-ffec81a2f2f6
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: RATECODE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6f0a7c6-76ee-48c4-87c3-64d893eaaab5
+          stepCounter: f3b29c11-9fb6-43d6-8234-ffec81a2f2f6
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: RATE_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SEED_RATE_CODES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

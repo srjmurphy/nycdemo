@@ -1,0 +1,71 @@
+fileVersion: 1
+id: 743f8428-04b2-41d4-b79d-c909c061d502
+name: STG_VENDOR_CODES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Staging table for vendor codes with type casting and renaming
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f1c7a7a-83d2-4789-b6cf-7ea04385c729
+          stepCounter: 743f8428-04b2-41d4-b79d-c909c061d502
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: VENDOR_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f6f9c88-187a-4598-aa74-0c633e6ddd4e
+                stepCounter: 999a6f13-17b2-443a-94dc-4b28487428c3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28926553-717b-4a90-8237-c747f377febe
+          stepCounter: 743f8428-04b2-41d4-b79d-c909c061d502
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: VENDOR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac139ef2-9ddc-4015-a4aa-b8e656b48f36
+                stepCounter: 999a6f13-17b2-443a-94dc-4b28487428c3
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          SEED_VENDOR_CODES: 999a6f13-17b2-443a-94dc-4b28487428c3
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: SEED_VENDOR_CODES
+        join:
+          joinCondition: FROM {{ ref('SRC', 'SEED_VENDOR_CODES') }} SEED_VENDOR_CODES
+        name: STG_VENDOR_CODES
+        noLinkRefs: []
+  name: STG_VENDOR_CODES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
